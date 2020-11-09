@@ -20,6 +20,8 @@
 /* Initialize driver objects & states */
 int driver_mstp_init()
 {
+    INFO("INIT MSTP DRIVER ");
+    
     return 0;
 }
 
@@ -32,6 +34,8 @@ void driver_mstp_fini()
 /* Driver hook that is called before a bridge is created */
 bool driver_create_bridge(bridge_t *br, __u8 *macaddr)
 {
+    INFO(" BRIDGE CREATE ");
+
     return true;
 }
 
